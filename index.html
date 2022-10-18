@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>Trevel reservation form</h1>
+
+      <h2>*denotes mandotory</h2>
+      <label for="full-name">Full name*:</label>
+      <input type="text" placeholder="Full name" id="full-name" autofocus/>
+
+      <label for="Email">Email address*: </label>
+      <input type="text" placeholder="Email address" id="Email" />
+
+      <fieldset>
+        <legend>Select Tour Package</legend>
+        <input type="text" name="tour" list="package-list" />
+        <datalist id="package-list">
+          <option value="GOA"></option>
+          <option value="Ibiza"></option>
+          <option value="Egypt"></option>
+          <option value="Turkey"></option>
+        </datalist>
+      </fieldset>
+
+      <label for="data">Arrival date*: </label>
+      <input type="date" id="data" />
+
+      <label for="Number">Number of persons*: </label>
+      <input type="number" placeholder="Number" id="Number" />
+      <label>What would you want to avail?*:</label>
+      <label> <input type="checkbox" name="eat" />Boarding</label>
+      <label> <input type="checkbox" name="eat" />Fooding</label>
+      <label> <input type="checkbox" name="eat" />Sight seeing</label>
+
+      <label for="coupon-code">Discount coupon code*: </label>
+      <input type="number" placeholder="Code" id="coupon-code" />
+      <label>Terms and conditions*</label>
+      <div>
+        <label>
+          <input type="radio" name="choice" value="I agree" />I agree</label>
+        <label>
+          <input type="radio" name="choice" value="I disagree" />I
+          disagree</label>
+      </div>
+      <button type="submit">Complete reservation</button>
+    </form>
+  </body>
+</html>
